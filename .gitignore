@@ -1,0 +1,17 @@
+# Compiled Binaries
+*.exe
+*.o
+*.obj
+sim.exe
+main.o
+deadlock.o
+PCB.o
+List.o
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Logs
+*.log

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Kernel Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OS Kernel Simulator</h1>
+        <div class="controls">
+            <button id="add-process">Create Process</button>
+            <button id="fork-process">Fork Process</button>
+            <button id="kill-process">Kill Process</button>
+            <button id="exit-process">Exit Process</button>
+            <button id="quantum">Quantum</button>
+        </div>
+        <div class="controls">
+            <button id="send-msg">Send Message</button>
+            <button id="receive-msg">Receive Message</button>
+            <button id="reply-msg">Reply Message</button>
+        </div>
+        <div class="controls">
+            <button id="new-semaphore">New Semaphore</button>
+            <button id="sem-p">Semaphore P</button>
+            <button id="sem-v">Semaphore V</button>
+        </div>
+        <div class="controls">
+            <button id="add-resource">Add Resource</button>
+            <button id="request-resource">Request Resource</button>
+            <button id="release-resource">Release Resource</button>
+        </div>
+        <div class="controls">
+            <button id="proc-info">Process Info</button>
+            <button id="total-info">Total Info</button>
+            <button id="detect-deadlock">Detect Deadlock</button>
+        </div>
+        <div id="resource-table"></div>
+        <div id="process-table"></div>
+        <div id="deadlock-status"></div>
+        <div id="messages"></div>
+        <div id="semaphores"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,82 @@
+body {
+    background: #f4f6fb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 40px 40px 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #2a3a5e;
+    margin-bottom: 32px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+button {
+    background: #2a3a5e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #405080;
+}
+
+#resource-table, #process-table {
+    margin-bottom: 32px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+th, td {
+    border: 1px solid #e0e6f0;
+    padding: 10px 8px;
+    text-align: center;
+}
+th {
+    background: #e0e6f0;
+    color: #2a3a5e;
+}
+
+tr:nth-child(even) {
+    background: #f8fafd;
+}
+
+#deadlock-status {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+#deadlock-status.safe {
+    background: #e6f9e6;
+    color: #1a7f1a;
+}
+#deadlock-status.deadlock {
+    background: #ffeaea;
+    color: #c0392b;
+} 
