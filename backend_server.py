@@ -18,7 +18,10 @@ def static_proxy(path):
 def detect_deadlock():
     # Run the C backend with a command to detect deadlock
     # Adapted for Windows
-    proc = subprocess.Popen(['sim.exe'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    # Run the C backend with a command to detect deadlock
+    # Adapted for Windows and Linux
+    sim_executable = 'sim.exe' if os.name == 'nt' else './sim'
+    proc = subprocess.Popen([sim_executable], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     # Send the 'D' command to detect deadlock, then 'E' to exit simulation
     # 'E' kills the current process (Init), which terminates the sim if it's the only one.
     out, err = proc.communicate(input='D\nE\n')
